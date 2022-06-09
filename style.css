@@ -3,11 +3,32 @@ html {
     min-height: 100vh;
 }
 
+body {
+    margin: 0px auto;
+    position: relative;
+    box-sizing: border-box;
+    min-height: 100vh;
+    min-width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 header {
     position: absolute;
-    width: 100%;
+    z-index: 1;
+    width: 75%;
+    left: 25%;
     height: 100px;
     background: linear-gradient(180deg, #006eff, #ffffff);
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+li {
+    list-style-type: none;
 }
 
 .menu ul {
@@ -31,4 +52,68 @@ header {
 .menu a:active,
 .menu a:focus {
     color: #006eff;
+}
+
+aside {
+    position: relative;
+    min-height: 1px;
+}
+
+aside {
+    width: 25%;
+    display: block;
+    background: linear-gradient(90deg, #006eff, #98c5ff);
+}
+
+.left_side {
+    position: sticky;
+    top: 0px;
+}
+
+.left_side img {
+    width: 100%;
+}
+
+.contacts {
+    color: #fff;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.contacts p {
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 0px;
+}
+
+.contacts ul {
+    margin-top: 10px;
+}
+
+.contacts a {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin: 4px 0;
+}
+
+.contacts-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 33%;
+}
+
+.contacts div a {
+    display: inline-block;
+}
+
+h1 {
+    font-size: 28px;
+    letter-spacing: 10px;
+    margin: 10px 0px;
+    text-transform: uppercase;
+    text-align: center;
 }
