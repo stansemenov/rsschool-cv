@@ -117,3 +117,43 @@ h1 {
     text-transform: uppercase;
     text-align: center;
 }
+
+main {
+    width: calc(75% - 100px);
+    display: block;
+    padding: 50px 50px 0px;
+}
+
+main>section {
+    padding: 20px 0px;
+    border-bottom: double #e6e6e6;
+}
+
+main>section:last-child {
+    border: none;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    margin: 15px -30px 15px;
+}
+
+.row p {
+    margin: 0px;
+}
+
+#summary {
+    padding-top: 50px;
+}
+
+.past_me,
+.future_me {
+    padding: 0px 30px;
+    width: 50%;
+}
+
+.past_me p,
+.future_me p {
+    text-align: justify;
+}
