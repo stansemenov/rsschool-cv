@@ -1,0 +1,434 @@
+html {
+    scroll-behavior: smooth;
+    min-height: 100vh;
+}
+
+body {
+    margin: 0px auto;
+    position: relative;
+    box-sizing: border-box;
+    min-height: 100vh;
+    min-width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header {
+    position: absolute;
+    z-index: 1;
+    width: 75%;
+    left: 25%;
+    height: 100px;
+    background: linear-gradient(180deg, #006eff, #fff);
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 50px;
+}
+
+.menu a {
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.menu a:hover,
+.menu a:active,
+.menu a:focus {
+    color: #006eff;
+}
+
+aside {
+    position: relative;
+    min-height: 1px;
+}
+
+aside {
+    width: 25%;
+    display: block;
+    background: linear-gradient(90deg, #006eff, #98c5ff);
+}
+
+.left_side {
+    position: sticky;
+    top: 0px;
+}
+
+.left_side img {
+    width: 100%;
+}
+
+.contacts {
+    color: #fff;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.contacts p {
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 0px;
+}
+
+.contacts ul {
+    margin-top: 0px;
+}
+
+.contacts a {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin: 4px 0;
+}
+
+.contacts-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25%;
+    min-width: 100px;
+}
+
+.contacts div a {
+    display: inline-block;
+}
+
+h1 {
+    font-size: 28px;
+    letter-spacing: 10px;
+    margin: 10px 0px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    margin: 5px 0px 10px;
+    color: #006eff;
+}
+
+main {
+    width: calc(75% - 100px);
+    display: block;
+    padding: 50px 50px 0px;
+}
+
+main>section {
+    padding: 20px 0px;
+    border-bottom: double #e6e6e6;
+}
+
+main>section:last-child {
+    margin-bottom: 60px;
+}
+
+main>section:first-child {
+    margin-top: 30px;
+}
+
+.row {
+    display: flex;
+    margin: 15px -30px 15px;
+}
+
+.row p {
+    margin: 0px;
+    color: #222;
+}
+
+#summary {
+    padding-top: 50px;
+}
+
+.past_me,
+.future_me,
+.edu,
+.language {
+    padding: 0px 30px;
+    width: 50%;
+}
+
+.past_me p,
+.future_me p {
+    text-align: justify;
+}
+
+.skills {
+    width: 50%;
+}
+
+.code {
+    padding-left: 50px;
+    width: 50%;
+}
+
+#skills {
+    margin: 0px;
+}
+
+#skills i {
+    font-size: 36px;
+    display: block;
+    color: #999;
+    padding-bottom: 10px;
+}
+
+#skills ul>li>div {
+    text-decoration: none;
+    padding-bottom: 10px;  
+}
+
+#skills ul>li>div:hover>i {
+    color: #006eff;
+}
+
+#skills ul>li>div:hover {
+    color: #006eff;
+}
+
+#skills li {
+    width: 25%;
+    float: left;
+    font-size: 12px;
+}
+
+#code pre {
+    display: block;
+    background-color: #999;
+    padding: 20px;
+    width: 234px;
+    font-size: 16px;
+}
+
+.skills ul {
+    max-width: 480px;
+    min-width: 180px;
+}
+
+.skills div {
+    display: block;
+    max-width: 100px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.institute {
+    display: block;
+}
+
+.institute p {
+    line-height: 20px;
+    padding-top: 4px;
+    margin: 25px 0px;
+}
+
+.institute img {
+    height: 70px;
+    padding-right: 10px;
+}
+
+.stepik img {
+    background-color: #111;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 45px;
+}
+
+.lang {
+    display: block;
+}
+
+.lang p {
+    line-height: 20px;
+    margin: 40px 0px;
+}
+
+.lang img {
+    height: 20px;
+    padding-right: 10px;
+    float: left;
+}
+
+footer {
+    position: absolute;
+    z-index: 1;
+    left: 25%;
+    width: 75%;
+    bottom: 0;
+}
+
+.copyrights {
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1120px) {
+    h1 {
+        font-size: 24px;
+        letter-spacing: 6px;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        display: block;
+    }
+
+    header {
+        width: 100%;
+        left: 0;
+        position: relative;
+        height: 60px;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 36px;
+        letter-spacing: 14px;
+    }
+
+    .contacts a {
+        font-size: 28px;
+    }
+
+    .contacts p {
+        font-size: 32px;
+    }
+
+    .contacts-icons {
+        margin: 0 25%;
+    }
+
+    #summary {
+        padding-top: 50px;
+    }
+
+    .past_me,
+    .future_me {
+        width: 100%;
+        padding: 10px;
+        margin: 0 -12px;
+    }
+
+    .skills,
+    .code {
+        width: 100%;
+        padding: 0;
+    }
+
+    .row,
+    #code pre {
+        display: block;
+        margin: 0 auto;
+        
+    }
+
+    #code pre {
+        width: auto;
+        text-align: justify;
+    }
+
+    main {
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .menu ul {
+        padding: 0 20px;
+        margin: 0px;
+    }
+
+    section {
+        padding: 20px !important;
+        
+    }
+
+    .menu a {
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+
+    .skills ul {
+        max-width: 100%;
+        text-align: justify;
+    }
+
+    #skills li {
+        width: 16.6666667%;
+    }
+
+    .row p {
+        font-size: 12px;
+    }
+
+    .edu,
+    .language {
+        width: 100%;
+        display: block;
+        padding: 0px;
+    }
+
+    .lang p {
+        line-height: 20px;
+        margin: 10px 0px;
+    }
+
+    .lang img {
+        height: 20px;
+        padding-right: 10px;
+        float: none;
+    }
+
+    footer {
+        width: 100%;
+        left: 0;
+        position: relative;
+    }
+
+    .copyrights {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 360px) {
+    .menu a {
+        letter-spacing: 1px;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 34px;
+        letter-spacing: 8px;
+    }
+
+    #skills li {
+        font-size: 10px;
+    }
+
+    .copyrights img {
+        height: 30px;
+    }
+}
