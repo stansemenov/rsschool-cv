@@ -276,3 +276,98 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+
+@media (max-width: 800px) {
+    body {
+        display: block;
+    }
+
+    header {
+        width: 100%;
+        left: 0;
+        position: relative;
+        height: 60px;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .contacts a {
+        font-size: 28px;
+    }
+
+    .contacts-icons {
+        margin: 0 25%;
+    }
+
+    .past_me,
+    .future_me {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .skills,
+    .code {
+        width: 100%;
+        padding: 0;
+    }
+
+    .row {
+        display: block;
+        margin: 0 auto;
+    }
+
+    main {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .menu ul {
+        padding: 0 20px;
+        margin: 0px;
+    }
+
+    section {
+        padding: 20px !important;
+    }
+
+    .menu a {
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+
+    .skills ul {
+        max-width: 100%;
+    }
+
+    .row p {
+        font-size: 12px;
+    }
+
+    .edu,
+    .language {
+        width: 100%;
+        display: block;
+        padding: 0px;
+    }
+
+    .lang p {
+        line-height: 20px;
+        margin: 10px 0px;
+    }
+
+    footer {
+        width: 100%;
+        left: 0;
+        position: relative;
+    }
+
+    .copyrights {
+        padding: 0 30px;
+    }
+}
