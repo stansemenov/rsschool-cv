@@ -263,3 +263,18 @@ main>section:last-child {
     padding-right: 10px;
     float: left;
 }
+
+footer {
+    position: absolute;
+    z-index: 1;
+    left: 25%;
+    width: 75%;
+    bottom: 0;
+}
+
+.copyrights {
+    margin-top: 25px;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+}
