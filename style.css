@@ -136,8 +136,7 @@ main>section {
 }
 
 main>section:last-child {
-    border: none;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .row {
@@ -273,7 +272,6 @@ footer {
 }
 
 .copyrights {
-    margin-top: 25px;
     padding: 0px 50px;
     display: flex;
     justify-content: space-between;
