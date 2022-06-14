@@ -139,6 +139,10 @@ main>section:last-child {
     margin-bottom: 60px;
 }
 
+main>section:first-child {
+    margin-top: 30px;
+}
+
 .row {
     display: flex;
     margin: 15px -30px 15px;
@@ -188,8 +192,7 @@ main>section:last-child {
 
 #skills ul>li>div {
     text-decoration: none;
-    padding-bottom: 10px;
-    
+    padding-bottom: 10px;  
 }
 
 #skills ul>li>div:hover>i {
@@ -210,7 +213,8 @@ main>section:last-child {
     display: block;
     background-color: #999;
     padding: 20px;
-    width: 310px;
+    width: 234px;
+    font-size: 16px;
 }
 
 .skills ul {
@@ -277,6 +281,13 @@ footer {
     justify-content: space-between;
 }
 
+@media (max-width: 1120px) {
+    h1 {
+        font-size: 24px;
+        letter-spacing: 6px;
+    }
+}
+
 @media (max-width: 800px) {
     body {
         display: block;
@@ -295,20 +306,30 @@ footer {
 
     h1 {
         font-size: 36px;
+        letter-spacing: 14px;
     }
 
     .contacts a {
         font-size: 28px;
     }
 
+    .contacts p {
+        font-size: 32px;
+    }
+
     .contacts-icons {
         margin: 0 25%;
+    }
+
+    #summary {
+        padding-top: 50px;
     }
 
     .past_me,
     .future_me {
         width: 100%;
         padding: 10px;
+        margin: 0 -12px;
     }
 
     .skills,
@@ -317,14 +338,22 @@ footer {
         padding: 0;
     }
 
-    .row {
+    .row,
+    #code pre {
         display: block;
         margin: 0 auto;
+        
+    }
+
+    #code pre {
+        width: auto;
+        text-align: justify;
     }
 
     main {
         width: 100%;
         padding: 0px;
+        text-align: center;
     }
 
     .menu ul {
@@ -334,6 +363,7 @@ footer {
 
     section {
         padding: 20px !important;
+        
     }
 
     .menu a {
@@ -343,6 +373,11 @@ footer {
 
     .skills ul {
         max-width: 100%;
+        text-align: justify;
+    }
+
+    #skills li {
+        width: 16.6666667%;
     }
 
     .row p {
@@ -361,6 +396,12 @@ footer {
         margin: 10px 0px;
     }
 
+    .lang img {
+        height: 20px;
+        padding-right: 10px;
+        float: none;
+    }
+
     footer {
         width: 100%;
         left: 0;
@@ -369,5 +410,25 @@ footer {
 
     .copyrights {
         padding: 0 30px;
+    }
+}
+
+@media (max-width: 360px) {
+    .menu a {
+        letter-spacing: 1px;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 34px;
+        letter-spacing: 8px;
+    }
+
+    #skills li {
+        font-size: 10px;
+    }
+
+    .copyrights img {
+        height: 30px;
     }
 }
