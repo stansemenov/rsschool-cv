@@ -103,7 +103,8 @@ aside {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 33%;
+    margin: 25%;
+    min-width: 100px;
 }
 
 .contacts div a {
@@ -154,7 +155,9 @@ main>section:last-child {
 }
 
 .past_me,
-.future_me {
+.future_me,
+.edu,
+.language {
     padding: 0px 30px;
     width: 50%;
 }
@@ -162,6 +165,15 @@ main>section:last-child {
 .past_me p,
 .future_me p {
     text-align: justify;
+}
+
+.skills {
+    width: 50%;
+}
+
+.code {
+    padding-left: 50px;
+    width: 50%;
 }
 
 #skills {
@@ -178,6 +190,7 @@ main>section:last-child {
 #skills ul>li>div {
     text-decoration: none;
     padding-bottom: 10px;
+    
 }
 
 #skills ul>li>div:hover>i {
@@ -189,14 +202,9 @@ main>section:last-child {
 }
 
 #skills li {
-    width: 33.3333%;
+    width: 25%;
     float: left;
-    font-size: 14px;
-}
-
-.skills,
-.code {
-    width: 50%;
+    font-size: 12px;
 }
 
 #code pre {
@@ -207,12 +215,51 @@ main>section:last-child {
 }
 
 .skills ul {
-    max-width: 270px;
+    max-width: 480px;
+    min-width: 180px;
 }
 
 .skills div {
     display: block;
-    max-width: 60px;
+    max-width: 100px;
     text-align: center;
     margin-bottom: 15px;
+}
+
+.institute {
+    display: block;
+}
+
+.institute p {
+    line-height: 20px;
+    padding-top: 4px;
+    margin: 25px 0px;
+}
+
+.institute img {
+    height: 70px;
+    padding-right: 10px;
+}
+
+.stepik img {
+    background-color: #111;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 45px;
+}
+
+.lang {
+    display: block;
+}
+
+.lang p {
+    line-height: 20px;
+    margin: 40px 0px;
+}
+
+.lang img {
+    height: 20px;
+    padding-right: 10px;
+    float: left;
 }
