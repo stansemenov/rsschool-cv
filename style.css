@@ -20,7 +20,7 @@ header {
     width: 75%;
     left: 25%;
     height: 100px;
-    background: linear-gradient(180deg, #006eff, #ffffff);
+    background: linear-gradient(180deg, #006eff, #fff);
 }
 
 ul {
@@ -103,7 +103,8 @@ aside {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 33%;
+    margin: 25%;
+    min-width: 100px;
 }
 
 .contacts div a {
@@ -116,4 +117,162 @@ h1 {
     margin: 10px 0px;
     text-transform: uppercase;
     text-align: center;
+}
+
+h2 {
+    margin: 5px 0px 10px;
+    color: #006eff;
+}
+
+main {
+    width: calc(75% - 100px);
+    display: block;
+    padding: 50px 50px 0px;
+}
+
+main>section {
+    padding: 20px 0px;
+    border-bottom: double #e6e6e6;
+}
+
+main>section:last-child {
+    margin-bottom: 60px;
+}
+
+.row {
+    display: flex;
+    margin: 15px -30px 15px;
+}
+
+.row p {
+    margin: 0px;
+    color: #222;
+}
+
+#summary {
+    padding-top: 50px;
+}
+
+.past_me,
+.future_me,
+.edu,
+.language {
+    padding: 0px 30px;
+    width: 50%;
+}
+
+.past_me p,
+.future_me p {
+    text-align: justify;
+}
+
+.skills {
+    width: 50%;
+}
+
+.code {
+    padding-left: 50px;
+    width: 50%;
+}
+
+#skills {
+    margin: 0px;
+}
+
+#skills i {
+    font-size: 36px;
+    display: block;
+    color: #999;
+    padding-bottom: 10px;
+}
+
+#skills ul>li>div {
+    text-decoration: none;
+    padding-bottom: 10px;
+    
+}
+
+#skills ul>li>div:hover>i {
+    color: #006eff;
+}
+
+#skills ul>li>div:hover {
+    color: #006eff;
+}
+
+#skills li {
+    width: 25%;
+    float: left;
+    font-size: 12px;
+}
+
+#code pre {
+    display: block;
+    background-color: #999;
+    padding: 20px;
+    width: 310px;
+}
+
+.skills ul {
+    max-width: 480px;
+    min-width: 180px;
+}
+
+.skills div {
+    display: block;
+    max-width: 100px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.institute {
+    display: block;
+}
+
+.institute p {
+    line-height: 20px;
+    padding-top: 4px;
+    margin: 25px 0px;
+}
+
+.institute img {
+    height: 70px;
+    padding-right: 10px;
+}
+
+.stepik img {
+    background-color: #111;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 45px;
+}
+
+.lang {
+    display: block;
+}
+
+.lang p {
+    line-height: 20px;
+    margin: 40px 0px;
+}
+
+.lang img {
+    height: 20px;
+    padding-right: 10px;
+    float: left;
+}
+
+footer {
+    position: absolute;
+    z-index: 1;
+    left: 25%;
+    width: 75%;
+    bottom: 0;
+}
+
+.copyrights {
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
 }
